@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Applications – Introduction to Stochastic Processes</title>
+<title>5&nbsp; Applications – Introduction to Stochastic Processes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter6.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Applications</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter6.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Applications</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -126,20 +126,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./practical1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Practical</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter6.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Applications</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,35 +164,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#computer-science" id="toc-computer-science" class="nav-link active" data-scroll-target="#computer-science"><span class="header-section-number">4.1</span> Computer Science</a>
+  <li><a href="#computer-science" id="toc-computer-science" class="nav-link active" data-scroll-target="#computer-science"><span class="header-section-number">5.1</span> Computer Science</a>
   <ul class="collapse">
-  <li><a href="#pagerank-algorithm" id="toc-pagerank-algorithm" class="nav-link" data-scroll-target="#pagerank-algorithm"><span class="header-section-number">4.1.1</span> PageRank Algorithm</a></li>
-  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning"><span class="header-section-number">4.1.2</span> Machine Learning</a></li>
-  <li><a href="#monte-carlo-markov-chain-mcmc-applications" id="toc-monte-carlo-markov-chain-mcmc-applications" class="nav-link" data-scroll-target="#monte-carlo-markov-chain-mcmc-applications"><span class="header-section-number">4.1.3</span> Monte Carlo Markov Chain (MCMC) Applications</a></li>
+  <li><a href="#pagerank-algorithm" id="toc-pagerank-algorithm" class="nav-link" data-scroll-target="#pagerank-algorithm"><span class="header-section-number">5.1.1</span> PageRank Algorithm</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning"><span class="header-section-number">5.1.2</span> Machine Learning</a></li>
+  <li><a href="#monte-carlo-markov-chain-mcmc-applications" id="toc-monte-carlo-markov-chain-mcmc-applications" class="nav-link" data-scroll-target="#monte-carlo-markov-chain-mcmc-applications"><span class="header-section-number">5.1.3</span> Monte Carlo Markov Chain (MCMC) Applications</a></li>
   </ul></li>
-  <li><a href="#biology" id="toc-biology" class="nav-link" data-scroll-target="#biology"><span class="header-section-number">4.2</span> Biology</a>
+  <li><a href="#biology" id="toc-biology" class="nav-link" data-scroll-target="#biology"><span class="header-section-number">5.2</span> Biology</a>
   <ul class="collapse">
-  <li><a href="#population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." id="toc-population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." class="nav-link" data-scroll-target="#population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains."><span class="header-section-number">4.2.1</span> Population Genetics – Evolutionary changes in gene frequencies are modeled with Markov chains.</a></li>
-  <li><a href="#ecological-modelling" id="toc-ecological-modelling" class="nav-link" data-scroll-target="#ecological-modelling"><span class="header-section-number">4.2.2</span> Ecological Modelling</a></li>
-  <li><a href="#epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." id="toc-epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." class="nav-link" data-scroll-target="#epidemiology-predicting-disease-spread-using-markov-models-in-sir-models."><span class="header-section-number">4.2.3</span> Epidemiology – Predicting disease spread using Markov models in SIR models.</a></li>
+  <li><a href="#population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." id="toc-population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." class="nav-link" data-scroll-target="#population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains."><span class="header-section-number">5.2.1</span> Population Genetics – Evolutionary changes in gene frequencies are modeled with Markov chains.</a></li>
+  <li><a href="#ecological-modelling" id="toc-ecological-modelling" class="nav-link" data-scroll-target="#ecological-modelling"><span class="header-section-number">5.2.2</span> Ecological Modelling</a></li>
+  <li><a href="#epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." id="toc-epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." class="nav-link" data-scroll-target="#epidemiology-predicting-disease-spread-using-markov-models-in-sir-models."><span class="header-section-number">5.2.3</span> Epidemiology – Predicting disease spread using Markov models in SIR models.</a></li>
   </ul></li>
-  <li><a href="#economics" id="toc-economics" class="nav-link" data-scroll-target="#economics"><span class="header-section-number">4.3</span> Economics</a>
+  <li><a href="#economics" id="toc-economics" class="nav-link" data-scroll-target="#economics"><span class="header-section-number">5.3</span> Economics</a>
   <ul class="collapse">
-  <li><a href="#consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." id="toc-consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." class="nav-link" data-scroll-target="#consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands."><span class="header-section-number">4.3.1</span> Consumer Behavior Modeling – Predicting how consumers switch between different brands.</a></li>
-  <li><a href="#macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." id="toc-macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." class="nav-link" data-scroll-target="#macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes."><span class="header-section-number">4.3.2</span> Macroeconomic Modeling – Analyzing business cycles and economic growth using Markov processes.</a></li>
-  <li><a href="#income-distribution-modeling-income-mobility-across-different-economic-classes." id="toc-income-distribution-modeling-income-mobility-across-different-economic-classes." class="nav-link" data-scroll-target="#income-distribution-modeling-income-mobility-across-different-economic-classes."><span class="header-section-number">4.3.3</span> Income Distribution – Modeling income mobility across different economic classes.</a></li>
+  <li><a href="#consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." id="toc-consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." class="nav-link" data-scroll-target="#consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands."><span class="header-section-number">5.3.1</span> Consumer Behavior Modeling – Predicting how consumers switch between different brands.</a></li>
+  <li><a href="#macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." id="toc-macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." class="nav-link" data-scroll-target="#macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes."><span class="header-section-number">5.3.2</span> Macroeconomic Modeling – Analyzing business cycles and economic growth using Markov processes.</a></li>
+  <li><a href="#income-distribution-modeling-income-mobility-across-different-economic-classes." id="toc-income-distribution-modeling-income-mobility-across-different-economic-classes." class="nav-link" data-scroll-target="#income-distribution-modeling-income-mobility-across-different-economic-classes."><span class="header-section-number">5.3.3</span> Income Distribution – Modeling income mobility across different economic classes.</a></li>
   </ul></li>
-  <li><a href="#finance" id="toc-finance" class="nav-link" data-scroll-target="#finance"><span class="header-section-number">4.4</span> Finance</a>
+  <li><a href="#finance" id="toc-finance" class="nav-link" data-scroll-target="#finance"><span class="header-section-number">5.4</span> Finance</a>
   <ul class="collapse">
-  <li><a href="#stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." id="toc-stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." class="nav-link" data-scroll-target="#stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model."><span class="header-section-number">4.4.1</span> Stock Price Modeling – The Markov property is fundamental in models like the Black-Scholes model.</a></li>
-  <li><a href="#credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." id="toc-credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." class="nav-link" data-scroll-target="#credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains."><span class="header-section-number">4.4.2</span> Credit Ratings – Credit rating transitions of companies are often modeled using Markov chains.</a></li>
-  <li><a href="#risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." id="toc-risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." class="nav-link" data-scroll-target="#risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators."><span class="header-section-number">4.4.3</span> Risk Management – Estimating probabilities of financial crises based on economic indicators.</a></li>
+  <li><a href="#stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." id="toc-stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." class="nav-link" data-scroll-target="#stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model."><span class="header-section-number">5.4.1</span> Stock Price Modeling – The Markov property is fundamental in models like the Black-Scholes model.</a></li>
+  <li><a href="#credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." id="toc-credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." class="nav-link" data-scroll-target="#credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains."><span class="header-section-number">5.4.2</span> Credit Ratings – Credit rating transitions of companies are often modeled using Markov chains.</a></li>
+  <li><a href="#risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." id="toc-risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." class="nav-link" data-scroll-target="#risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators."><span class="header-section-number">5.4.3</span> Risk Management – Estimating probabilities of financial crises based on economic indicators.</a></li>
   </ul></li>
-  <li><a href="#insurance" id="toc-insurance" class="nav-link" data-scroll-target="#insurance"><span class="header-section-number">4.5</span> Insurance</a>
+  <li><a href="#insurance" id="toc-insurance" class="nav-link" data-scroll-target="#insurance"><span class="header-section-number">5.5</span> Insurance</a>
   <ul class="collapse">
-  <li><a href="#actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." id="toc-actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." class="nav-link" data-scroll-target="#actuarial-science-predicting-claim-occurrences-and-policyholder-behavior."><span class="header-section-number">4.5.1</span> Actuarial Science – Predicting claim occurrences and policyholder behavior.</a></li>
-  <li><a href="#risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." id="toc-risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." class="nav-link" data-scroll-target="#risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models."><span class="header-section-number">4.5.2</span> Risk Analysis – Assessing life insurance risks with Markovian mortality models.</a></li>
-  <li><a href="#policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." id="toc-policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." class="nav-link" data-scroll-target="#policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions."><span class="header-section-number">4.5.3</span> Policyholder Behavior – Modeling lapse rates and claims under different conditions.</a></li>
+  <li><a href="#actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." id="toc-actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." class="nav-link" data-scroll-target="#actuarial-science-predicting-claim-occurrences-and-policyholder-behavior."><span class="header-section-number">5.5.1</span> Actuarial Science – Predicting claim occurrences and policyholder behavior.</a></li>
+  <li><a href="#risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." id="toc-risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." class="nav-link" data-scroll-target="#risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models."><span class="header-section-number">5.5.2</span> Risk Analysis – Assessing life insurance risks with Markovian mortality models.</a></li>
+  <li><a href="#policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." id="toc-policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." class="nav-link" data-scroll-target="#policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions."><span class="header-section-number">5.5.3</span> Policyholder Behavior – Modeling lapse rates and claims under different conditions.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -196,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Applications</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Applications</span></h1>
 </div>
 
 
@@ -213,23 +219,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="computer-science" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="computer-science"><span class="header-section-number">4.1</span> Computer Science</h2>
-<section id="pagerank-algorithm" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="pagerank-algorithm"><span class="header-section-number">4.1.1</span> PageRank Algorithm</h3>
+<section id="computer-science" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="computer-science"><span class="header-section-number">5.1</span> Computer Science</h2>
+<section id="pagerank-algorithm" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="pagerank-algorithm"><span class="header-section-number">5.1.1</span> PageRank Algorithm</h3>
 <ul>
 <li><p><em>Eirinaki, M., Vazirgiannis, M., &amp; Kapogiannis, D. (2005, November). Web path recommendations based on page ranking and markov models. In Proceedings of the 7th annual ACM international workshop on Web information and data management (pp.&nbsp;2-9).</em></p>
 <p>Extracted “Markov models have been widely used for modelling <strong>users’ navigational behaviour</strong> in the Web graph, using the transitional probabilities between web pages, as recorded in the web logs. <strong>The recorded users’ navigation is used to extract popular web paths and predict current users’ next steps</strong>. Such purely usage-based probabilistic models, however, present certain shortcomings. Since the prediction of users’ navigational behaviour is based solely on the usage data, structural properties of the Web graph are ignored.”</p></li>
 </ul>
 </section>
-<section id="machine-learning" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">4.1.2</span> Machine Learning</h3>
+<section id="machine-learning" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">5.1.2</span> Machine Learning</h3>
 <ul>
 <li>Hidden Markov Models (HMMs) are widely used in speech recognition and natural language processing.</li>
 </ul>
 </section>
-<section id="monte-carlo-markov-chain-mcmc-applications" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="monte-carlo-markov-chain-mcmc-applications"><span class="header-section-number">4.1.3</span> Monte Carlo Markov Chain (MCMC) Applications</h3>
+<section id="monte-carlo-markov-chain-mcmc-applications" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="monte-carlo-markov-chain-mcmc-applications"><span class="header-section-number">5.1.3</span> Monte Carlo Markov Chain (MCMC) Applications</h3>
 <p>Randomized Algorithms – Monte Carlo Markov Chain (MCMC) methods are used in simulations and Bayesian inference.</p>
 <p>Markov Chain Monte Carlo (MCMC) is a class of algorithms used to sample from complex probability distributions when direct sampling is difficult. It combines Markov chains with Monte Carlo methods to generate samples that approximate a target distribution.</p>
 <p><strong>How MCMC Works</strong></p>
@@ -259,33 +265,33 @@ ul.task-list li input[type="checkbox"] {
 <p>Genetics &amp; Epidemiology → Evolutionary models and disease spread prediction</p>
 </section>
 </section>
-<section id="biology" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="biology"><span class="header-section-number">4.2</span> Biology</h2>
-<section id="population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains."><span class="header-section-number">4.2.1</span> Population Genetics – Evolutionary changes in gene frequencies are modeled with Markov chains.</h3>
+<section id="biology" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="biology"><span class="header-section-number">5.2</span> Biology</h2>
+<section id="population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains." class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="population-genetics-evolutionary-changes-in-gene-frequencies-are-modeled-with-markov-chains."><span class="header-section-number">5.2.1</span> Population Genetics – Evolutionary changes in gene frequencies are modeled with Markov chains.</h3>
 </section>
-<section id="ecological-modelling" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="ecological-modelling"><span class="header-section-number">4.2.2</span> Ecological Modelling</h3>
+<section id="ecological-modelling" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="ecological-modelling"><span class="header-section-number">5.2.2</span> Ecological Modelling</h3>
 <p><em>Balzter, H. (2000). Markov chain models for vegetation dynamics. Ecological modelling, 126(2-3), 139-154.</em></p>
 <p>Extracted “The aim of this paper is to assess the applicability of Markov chain models to <strong>predict vegetation changes</strong> using several different data sets, both from the scientific literature and own observations. It is anticipated that the results and the insights in model behaviour will also be useful for large-scale landscape ecosystem models by using Markov chains as submodels.”</p>
 </section>
-<section id="epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="epidemiology-predicting-disease-spread-using-markov-models-in-sir-models."><span class="header-section-number">4.2.3</span> Epidemiology – Predicting disease spread using Markov models in SIR models.</h3>
+<section id="epidemiology-predicting-disease-spread-using-markov-models-in-sir-models." class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="epidemiology-predicting-disease-spread-using-markov-models-in-sir-models."><span class="header-section-number">5.2.3</span> Epidemiology – Predicting disease spread using Markov models in SIR models.</h3>
 <p>Teaching in the Time of the COVID-19 Pandemic: dynamic Markov models in epidemiology</p>
 <ul>
 <li><p>Susceptible Infected Recovered (SIR)</p></li>
 <li><p>Susceptible Exposed Infected Recovered (SEIR)</p></li>
 </ul>
-<section id="dynamic-markov-models-dmms" class="level4" data-number="4.2.3.1">
-<h4 data-number="4.2.3.1" class="anchored" data-anchor-id="dynamic-markov-models-dmms"><span class="header-section-number">4.2.3.1</span> Dynamic Markov Models (DMMs)</h4>
+<section id="dynamic-markov-models-dmms" class="level4" data-number="5.2.3.1">
+<h4 data-number="5.2.3.1" class="anchored" data-anchor-id="dynamic-markov-models-dmms"><span class="header-section-number">5.2.3.1</span> Dynamic Markov Models (DMMs)</h4>
 <p>DMMs refer to Markov models where transition probabilities change over time, making them more flexible than standard homogeneous Markov chains. These models are useful in scenarios where the system evolves dynamically, such as in financial markets, weather forecasting, and biological processes.</p>
 <p>Another application of DMM</p>
 <p>Guo, X., Liu, Y., Tan, K., Mao, W., Jin, M., &amp; Lu, H. (2021). Dynamic Markov Model: Password Guessing Using Probability Adjustment Method. Applied Sciences, 11(10), 4607. https://doi.org/10.3390/app11104607</p>
 <p>Extracted</p>
 <p>“Password attack technology is mainly used for recovering passwords…”</p>
 </section>
-<section id="susceptible-infected-recovered-sir-models" class="level4" data-number="4.2.3.2">
-<h4 data-number="4.2.3.2" class="anchored" data-anchor-id="susceptible-infected-recovered-sir-models"><span class="header-section-number">4.2.3.2</span> Susceptible-Infected-Recovered (SIR) models</h4>
+<section id="susceptible-infected-recovered-sir-models" class="level4" data-number="5.2.3.2">
+<h4 data-number="5.2.3.2" class="anchored" data-anchor-id="susceptible-infected-recovered-sir-models"><span class="header-section-number">5.2.3.2</span> Susceptible-Infected-Recovered (SIR) models</h4>
 <p>These model assumes people can be in 3 states:</p>
 <p>1 Susceptible: people have no immunity to the disease. These people can become infected by coming into contact with an infected person.</p>
 <p>2 Infected: people have the disease and they can spread it.</p>
@@ -299,45 +305,45 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="economics" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="economics"><span class="header-section-number">4.3</span> Economics</h2>
-<section id="consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands."><span class="header-section-number">4.3.1</span> Consumer Behavior Modeling – Predicting how consumers switch between different brands.</h3>
+<section id="economics" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="economics"><span class="header-section-number">5.3</span> Economics</h2>
+<section id="consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands." class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="consumer-behavior-modeling-predicting-how-consumers-switch-between-different-brands."><span class="header-section-number">5.3.1</span> Consumer Behavior Modeling – Predicting how consumers switch between different brands.</h3>
 <ul>
 <li><em>Sharma, V., &amp; Sonwalkar, J. (2016). Predicting the Switching Intention of Cell-Phone Brands: Application of Markov Chain Models. Journal of Management Research and Analysis, 3(2), 95-100.</em></li>
 </ul>
 <p><img src="ch6.1.png" class="img-fluid"></p>
 <p>The above image is extracted from the paper “Sharma, V., &amp; Sonwalkar, J. (2016). Predicting the Switching Intention of Cell-Phone Brands: Application of Markov Chain Models. Journal of Management Research and Analysis, 3(2), 95-100.”</p>
 </section>
-<section id="macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." class="level3" data-number="4.3.2">
-<h3 data-number="4.3.2" class="anchored" data-anchor-id="macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes."><span class="header-section-number">4.3.2</span> Macroeconomic Modeling – Analyzing business cycles and economic growth using Markov processes.</h3>
+<section id="macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes." class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="macroeconomic-modeling-analyzing-business-cycles-and-economic-growth-using-markov-processes."><span class="header-section-number">5.3.2</span> Macroeconomic Modeling – Analyzing business cycles and economic growth using Markov processes.</h3>
 </section>
-<section id="income-distribution-modeling-income-mobility-across-different-economic-classes." class="level3" data-number="4.3.3">
-<h3 data-number="4.3.3" class="anchored" data-anchor-id="income-distribution-modeling-income-mobility-across-different-economic-classes."><span class="header-section-number">4.3.3</span> Income Distribution – Modeling income mobility across different economic classes.</h3>
-</section>
-</section>
-<section id="finance" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="finance"><span class="header-section-number">4.4</span> Finance</h2>
-<section id="stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model."><span class="header-section-number">4.4.1</span> Stock Price Modeling – The Markov property is fundamental in models like the Black-Scholes model.</h3>
-</section>
-<section id="credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." class="level3" data-number="4.4.2">
-<h3 data-number="4.4.2" class="anchored" data-anchor-id="credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains."><span class="header-section-number">4.4.2</span> Credit Ratings – Credit rating transitions of companies are often modeled using Markov chains.</h3>
-</section>
-<section id="risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." class="level3" data-number="4.4.3">
-<h3 data-number="4.4.3" class="anchored" data-anchor-id="risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators."><span class="header-section-number">4.4.3</span> Risk Management – Estimating probabilities of financial crises based on economic indicators.</h3>
+<section id="income-distribution-modeling-income-mobility-across-different-economic-classes." class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="income-distribution-modeling-income-mobility-across-different-economic-classes."><span class="header-section-number">5.3.3</span> Income Distribution – Modeling income mobility across different economic classes.</h3>
 </section>
 </section>
-<section id="insurance" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="insurance"><span class="header-section-number">4.5</span> Insurance</h2>
-<section id="actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." class="level3" data-number="4.5.1">
-<h3 data-number="4.5.1" class="anchored" data-anchor-id="actuarial-science-predicting-claim-occurrences-and-policyholder-behavior."><span class="header-section-number">4.5.1</span> Actuarial Science – Predicting claim occurrences and policyholder behavior.</h3>
+<section id="finance" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="finance"><span class="header-section-number">5.4</span> Finance</h2>
+<section id="stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model." class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="stock-price-modeling-the-markov-property-is-fundamental-in-models-like-the-black-scholes-model."><span class="header-section-number">5.4.1</span> Stock Price Modeling – The Markov property is fundamental in models like the Black-Scholes model.</h3>
 </section>
-<section id="risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." class="level3" data-number="4.5.2">
-<h3 data-number="4.5.2" class="anchored" data-anchor-id="risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models."><span class="header-section-number">4.5.2</span> Risk Analysis – Assessing life insurance risks with Markovian mortality models.</h3>
+<section id="credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains." class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="credit-ratings-credit-rating-transitions-of-companies-are-often-modeled-using-markov-chains."><span class="header-section-number">5.4.2</span> Credit Ratings – Credit rating transitions of companies are often modeled using Markov chains.</h3>
 </section>
-<section id="policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." class="level3" data-number="4.5.3">
-<h3 data-number="4.5.3" class="anchored" data-anchor-id="policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions."><span class="header-section-number">4.5.3</span> Policyholder Behavior – Modeling lapse rates and claims under different conditions.</h3>
+<section id="risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators." class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="risk-management-estimating-probabilities-of-financial-crises-based-on-economic-indicators."><span class="header-section-number">5.4.3</span> Risk Management – Estimating probabilities of financial crises based on economic indicators.</h3>
+</section>
+</section>
+<section id="insurance" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="insurance"><span class="header-section-number">5.5</span> Insurance</h2>
+<section id="actuarial-science-predicting-claim-occurrences-and-policyholder-behavior." class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="actuarial-science-predicting-claim-occurrences-and-policyholder-behavior."><span class="header-section-number">5.5.1</span> Actuarial Science – Predicting claim occurrences and policyholder behavior.</h3>
+</section>
+<section id="risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models." class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="risk-analysis-assessing-life-insurance-risks-with-markovian-mortality-models."><span class="header-section-number">5.5.2</span> Risk Analysis – Assessing life insurance risks with Markovian mortality models.</h3>
+</section>
+<section id="policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions." class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="policyholder-behavior-modeling-lapse-rates-and-claims-under-different-conditions."><span class="header-section-number">5.5.3</span> Policyholder Behavior – Modeling lapse rates and claims under different conditions.</h3>
 
 
 </section>
@@ -426,8 +432,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -538,7 +542,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -767,12 +770,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./chapter5.html" class="pagination-link" aria-label="Birth Process, Death Process and Birth-Death Process.">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

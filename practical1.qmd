@@ -1,0 +1,87 @@
+# Practical 
+
+## Package
+
+```{r}
+#pak::pak("thiyangt/stochastic")
+library(stochastic)
+```
+
+### n-step transition probability matrix
+
+```{r}
+library(stochastic)
+x <- c(0.2,0.8,0.4,0.6)
+nstepmat(x, 2, 3)
+```
+
+```{r}
+nstepmat(x, 2, 13)
+```
+
+### Compute stationary probabilities
+
+```{r}
+mat <- matrix(c(0.5, 0.5, 0.7, 0.3), byrow=TRUE, ncol=2)
+stationary_prob(onestep=mat)
+```
+
+### Simulate a Markov Chain process
+
+```{r}
+init <- c(0.1, 0.9)
+mat <- matrix(c(0.5, 0.5, 0.7, 0.3), byrow=TRUE, ncol=2)
+simmarkov(init, mat, 100, c("Rainy", "Sunny"))
+```
+
+## Question 1
+
+
+An insurance company offers four levels of discounts to policyholders based on their claim history:
+
+| Level | Discount |
+|-------|----------|
+| 1     | 0%       |
+| 2     | 20%      |
+| 3     | 30%      |
+| 4     | 40%      |
+
+The following are the rules for shifting between the four levels:
+
+- **Level 1:** Move to Level 2 with probability 0.5, stay at Level 1 with probability 0.5.
+- **Level 2:** Move to Level 1 with probability 0.2, move to Level 3 with probability 0.3, stay at Level 2 with probability 0.5.
+- **Level 3:** Move to Level 2 with probability 0.3, move to Level 4 with probability 0.4, stay at Level 3 with probability 0.3.
+- **Level 4:** Move to Level 3 with probability 0.2, stay at Level 4 with probability 0.8.
+
+
+
+**Tasks**
+
+1. Represent the system as a **Markov chain** using a transition probability matrix in R.
+
+2. Write an R function to **simulate the Markov chain** for 50 time periods starting from Level 1.
+
+3. Compute the **stationary distribution** of the Markov chain.
+
+4. Plot the **simulated discount levels over time**.
+
+5. Compute the **limiting (long-run) probabilities** of being in each discount level.
+
+
+## Question 2
+
+Generating and Simulating a Lung Cancer Metastasis Markov Chain
+
+Read “A Stochastic Markov Chain Model to Describe Lung Cancer Growth and Metastasis” by Paul K. Newton et al. (2012). Based on the model presented in the [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC3338733/):
+
+1. Identify the key anatomical sites relevant for lung cancer metastasis and represent them as states in a discrete-time Markov chain.
+
+2. Using the descriptions and data from the paper, construct a transition probability matrix that represents the likelihood of metastasis from one site to another in one time step.
+
+3. Write an R function to simulate the evolution of a single patient’s metastasis over 
+$n$ time steps, starting from the primary lung tumor.
+
+4. Use your function to simulate multiple patients (e.g., 1000) over a fixed number of steps (e.g., 20) and summarize the proportion of patients in each site at the final step.
+
+5. Discuss how your simulation results relate to the biological progression described in the paper.
+

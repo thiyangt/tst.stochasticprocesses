@@ -83,7 +83,7 @@ p_{i0} & p_{i1} & p_{i2} & ...\\
 
 ## Exercise 
 
-1. Suppose there are two types of crops (Crop A and Crop B) planted in different fields, and farmers perform certain operations that may affect the composition of crops in each field. After each agricultural season, a random selection of crops from one field is transferred to the other. Let $X\_t$ denote the number of Crop A plants in the first field after the $t$th season. What are the parameter space and state space for this agricultural scenario, and can $\{X\_t\}$ be considered a Markov chain given certain conditions on the planting and transfer processes?
+1. Suppose there are two types of crops (Crop A and Crop B) planted in different fields, and farmers perform certain operations that may affect the composition of crops in each field. After each agricultural season, a random selection of crops from one field is transferred to the other. Let $X_t$ denote the number of Crop A plants in the first field after the $t$th season. What are the parameter space and state space for this agricultural scenario, and can $\{X_t\}$ be considered a Markov chain given certain conditions on the planting and transfer processes?
 
 ## One-step transition probability matrix
 
@@ -158,8 +158,303 @@ $$\mathbf{P}^{(n)}=\mathbf{P}^{(n-1+1)}=\mathbf{P}^{n-1}\mathbf{P}=\mathbf{P}^n.
 
 
 
-## Classification of states
+## Types of States
 
-## Limiting probabilities
+*Definition*: If $P_{ij}^{(n)}>0$ for some $n \geq 0,$ state $j$ is **accessible** from $i$.
 
-## Applications
+Notation: $i \rightarrow j.$
+
+
+*Definition*: If $i \rightarrow j$ and $j \rightarrow i$, then $i$ and $j$ **communicate**.
+
+Notation: $i \leftrightarrow j.$
+
+\vspace{3cm}
+
+
+## Theorem:
+
+Communication is an equivalence relation:
+
+(i) $i \leftrightarrow i$ for all $i$ (reflexive).
+
+(ii) $i \leftrightarrow j$ implies  $j \leftrightarrow i$ (symmetric).
+
+(iii) $i \leftrightarrow j$ and $j \leftrightarrow k$ imply $i \leftrightarrow k$ (transitive).
+
+## In-class: Proof
+
+(i) $i \leftrightarrow i$ for all $i$ (reflexive).
+
+
+
+## In-class: Proof
+
+(ii) $i \leftrightarrow j$ implies  $j \leftrightarrow i$ (symmetric).
+
+
+
+## In-class: Proof
+
+(iii) $i \leftrightarrow j$ and $j \leftrightarrow k$ imply $i \leftrightarrow k$ (transitive).
+
+
+
+## In-class: Proof
+
+
+## Note:
+
+- Two states that communicate are said to be in the same **class**.
+
+- The concept of communication divides the state space
+up into a number of separate classes.
+
+In-class: demonstration
+
+
+
+## Theorem 
+
+
+**Definition**: An equivalence class consists of all states that communicate with each other.
+
+Remark: Easy to see that two equivalence classes are disjoint.
+
+Example: The following P has equivalence classes $\{0, 1\}$ and $\{2, 3\}$
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        0.5 & 0.5 & 0 & 0 \\
+                        0.5 & 0.5  & 0 & 0\\
+                        0 & 0  & 0.75 & 0.25\\
+                        0 & 0  & 0.25 & 0.75\\
+                        \end{array}\right]$
+
+
+
+**What about this?**
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        0.5 & 0.5 & 0 & 0 \\
+                        0.5 & 0.3  & 0.2 & 0\\
+                        0 & 0  & 0.75 & 0.25\\
+                        0 & 0  & 0.25 & 0.75\\
+                        \end{array}\right]$
+
+## Irreducible
+
+*Definition*: A MC is irreducible if there is only one
+equivalence class (i.e., if all states communicate with each other).
+
+
+**What about these?**
+
+**Example 1**
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        0.5 & 0.5 & 0 & 0 \\
+                        0.5 & 0.5  & 0 & 0\\
+                        0 & 0  & 0.75 & 0.25\\
+                        0 & 0  & 0.25 & 0.75\\
+                        \end{array}\right]$
+
+**Example 2**
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        0.5 & 0.5 & 0 & 0 \\
+                        0.5 & 0.3  & 0.2 & 0\\
+                        0 & 0  & 0.75 & 0.25\\
+                        0 & 0  & 0.25 & 0.75\\
+                        \end{array}\right]$
+
+
+
+**Example 3**
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rr}
+                        0.5 & 0.5 \\
+                        0.25 & 0.75 \\
+                        \end{array}\right]$
+
+
+
+**Example 4**
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrr}
+                        0.25 & 0 & 0.75  \\
+                        1 & 0  & 0 \\
+                        0 & 0.5 & 0.5\\
+                        \end{array}\right]$
+
+
+
+## Identify the equivalence classes
+
+Consider a Markov chain with a state space $S = \{0, 1, 2, 3, 4\}$ and having the following one-step transition probability matrix.
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrrr}
+                        0.4 & 0.2 & 0 & 0.4 & 0  \\
+                          0.2 & 0.4 & 0.1 & 0.3 & 0  \\
+                          0.1 & 0.2 & 0 .5& 0.1 & 0.1  \\
+                            0 & 0 & 0 & 1 & 0  \\
+                              0 & 0 & 0 & 0 & 1  \\
+                        \end{array}\right]$
+
+## Problems ^[Introduction to Probability Models, Sheldon M. Ross]
+
+Example 4.10
+
+Example 4.11
+
+Example 4.12
+
+## Theorem 
+
+The relation of communication partitions the state space into mutually exclusive and exhaustive classes. (The states in a given class communicate with each other. But states in
+different classes do not communicate with each other.)
+
+
+## Definition
+
+Let $f_i$ denote the probability that, starting in state $i$, the process will ever re-enters state $i$, i.e,
+
+$f_i = P(X_n=i \text{ for some } n \geq 1|X_0=i)$
+\vspace{5cm}
+
+**Example 1**
+
+Consider the Markov chain consisting of the states 0, 1, 2, 3 with the transition probability matrix,
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        \frac{1}{2} & \frac{1}{2} & 0 & 0 \\
+                          \frac{1}{2} &   \frac{1}{2}  & 0 & 0\\
+                          \frac{1}{4} &   \frac{1}{4}  &   \frac{1}{4} &   \frac{1}{4}\\
+                        0 & 0  & 0 & 1\\
+                        \end{array}\right]$
+
+Find $f_0$, $f_1$, $f_2$, $f_3$.
+
+
+
+## Recurrent and transient states
+
+Let $f_i$ be the probability that, starting in state $i$, the process will ever re-enter state
+$i$. State $i$ is said to be recurrent if $f_i = 1$ and transient if $f_i < 1$.
+
+
+**Example 1**
+
+Consider the Markov chain consisting of the states 0,1,2 with the transition probability matrix
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrr}
+                        0 & \frac{1}{2} & \frac{1}{2} \\
+                          \frac{1}{2}  & 0 &  \frac{1}{2}\\
+                          \frac{1}{2} &   \frac{1}{2}  &   0 \\
+                        \end{array}\right]$
+
+Determine which states are transient and which are recurrent.
+
+**Example 2**
+
+Consider the Markov chain consisting of the states 0, 1, 2, 3 with the transition probability matrix
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrr}
+                        0 & 0 & 0 & 1 \\
+                         0  & 0 & 0 & 1\\
+                          \frac{1}{2} &   \frac{1}{2}  & 0 & 0 \\
+                          0 &   0  & 1 & 0 \\
+                        \end{array}\right]$
+
+Determine which states are transient and which are recurrent.
+
+**Example 3**
+
+Consider the Markov chain consisting of the states 0, 1, 2, 3, 4 with the transition probability matrix
+
+$\mathbf{P}$= $\left[\begin{array}
+                        {rrrrr}
+                        \frac{1}{2} & 0 & \frac{1}{2} & 0 & 0\\
+                       \frac{1}{4} & \frac{1}{2} & \frac{1}{4} & 0 & 0\\
+                       \frac{1}{2} & 0 & \frac{1}{2} & 0 & 0\\
+                       0 & 0 & 0 & \frac{1}{2} & \frac{1}{2}\\
+                       0 & 0 & 0 & \frac{1}{2} & \frac{1}{2}\\
+                        \end{array}\right]$
+
+Determine which states are transient and which are recurrent.
+
+
+## Theorem
+
+if state $i$ is recurrent then, starting in state $i$, the process will re-enter state $i$ again and again and again—in
+fact, infinitely often.
+
+
+<!--Page 206-->
+
+<!--B Theorem 2.4-->
+
+
+
+
+
+## Theorem
+
+For any state $i$, let $f_i$ denote the probability that, starting in state $i$, the process will ever re-enter state $i$. If state $i$ is transient then, starting in state $i$, the number of time
+periods that the process will be in state $i$ has a geometric distribution with finite
+mean $\frac{1}{1 - f_i}$.
+
+Proof: In-class
+
+
+
+## Theorem
+
+State $i$ is
+
+$$\text{ recurrent if } \sum_{n=1}^\infty P_{ii}^n=\infty,$$
+
+$$\text{ transient if } \sum_{n=1}^\infty P_{ii}^n < \infty,$$
+
+Proof: In-class
+
+
+
+
+## Corollary 1
+
+If state $i$ is recurrent, and state $i$ communicates with state $j$ ($i \leftrightarrow j$), then state $j$ is recurrent.
+
+<!--Book - C - 4.2-->
+
+<!--B- Theorem 2.8-->
+
+Proof: In-class
+
+## Corollary 2
+
+In a Markov Chain with a finite number of states not all of the states can be transient (There should be at least one recurrent state). 
+
+Proof: In-class
+\vspace{5cm}
+
+## Corollary 3
+
+If one state in an equivalent class is transient, then all other states in that class are also transient.
+
+Proof: In-class
+\vspace{5cm}
+
+## Corollary 4
+
+Not all states in a finite Markov
+chain can be transient. This leads to the conclusion that **all states of a finite irreducible Markov chain are recurrent**.

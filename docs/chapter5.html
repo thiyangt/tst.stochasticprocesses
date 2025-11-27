@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Birth Process, Death Process and Birth-Death Process. – Introduction to Stochastic Processes</title>
+<title>4&nbsp; Birth Process, Death Process and Birth-Death Process. – Introduction to Stochastic Processes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,16 +31,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./chapter6.html" rel="next">
-<link href="./chapter2.html" rel="prev">
+<link href="./practical1.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter5.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -155,20 +155,26 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./practical1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Practical</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Applications</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Applications</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -187,14 +193,14 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#applications-of-birth-death-process" id="toc-applications-of-birth-death-process" class="nav-link active" data-scroll-target="#applications-of-birth-death-process"><span class="header-section-number">3.1</span> Applications of Birth-Death Process</a></li>
-  <li><a href="#definition-transition-probability" id="toc-definition-transition-probability" class="nav-link" data-scroll-target="#definition-transition-probability"><span class="header-section-number">3.2</span> Definition: Transition Probability</a></li>
-  <li><a href="#instantaneous-birth-rate-and-instantaneous-death-rate" id="toc-instantaneous-birth-rate-and-instantaneous-death-rate" class="nav-link" data-scroll-target="#instantaneous-birth-rate-and-instantaneous-death-rate"><span class="header-section-number">3.3</span> Instantaneous birth rate and instantaneous death rate</a></li>
-  <li><a href="#postulates" id="toc-postulates" class="nav-link" data-scroll-target="#postulates"><span class="header-section-number">3.4</span> Postulates</a></li>
-  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">3.5</span> Exercise</a></li>
-  <li><a href="#special-cases" id="toc-special-cases" class="nav-link" data-scroll-target="#special-cases"><span class="header-section-number">3.6</span> Special cases</a></li>
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1"><span class="header-section-number">3.7</span> Exercise</a></li>
-  <li><a href="#instanttaneous-probability-transition-probability-probability-mass-function" id="toc-instanttaneous-probability-transition-probability-probability-mass-function" class="nav-link" data-scroll-target="#instanttaneous-probability-transition-probability-probability-mass-function"><span class="header-section-number">3.8</span> Instanttaneous Probability, Transition Probability, Probability Mass Function</a></li>
+  <li><a href="#applications-of-birth-death-process" id="toc-applications-of-birth-death-process" class="nav-link active" data-scroll-target="#applications-of-birth-death-process"><span class="header-section-number">4.1</span> Applications of Birth-Death Process</a></li>
+  <li><a href="#definition-transition-probability" id="toc-definition-transition-probability" class="nav-link" data-scroll-target="#definition-transition-probability"><span class="header-section-number">4.2</span> Definition: Transition Probability</a></li>
+  <li><a href="#instantaneous-birth-rate-and-instantaneous-death-rate" id="toc-instantaneous-birth-rate-and-instantaneous-death-rate" class="nav-link" data-scroll-target="#instantaneous-birth-rate-and-instantaneous-death-rate"><span class="header-section-number">4.3</span> Instantaneous birth rate and instantaneous death rate</a></li>
+  <li><a href="#postulates" id="toc-postulates" class="nav-link" data-scroll-target="#postulates"><span class="header-section-number">4.4</span> Postulates</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise"><span class="header-section-number">4.5</span> Exercise</a></li>
+  <li><a href="#special-cases" id="toc-special-cases" class="nav-link" data-scroll-target="#special-cases"><span class="header-section-number">4.6</span> Special cases</a></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1"><span class="header-section-number">4.7</span> Exercise</a></li>
+  <li><a href="#instanttaneous-probability-transition-probability-probability-mass-function" id="toc-instanttaneous-probability-transition-probability-probability-mass-function" class="nav-link" data-scroll-target="#instanttaneous-probability-transition-probability-probability-mass-function"><span class="header-section-number">4.8</span> Instanttaneous Probability, Transition Probability, Probability Mass Function</a></li>
   </ul>
 </nav>
     </div>
@@ -203,7 +209,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Birth Process, Death Process and Birth-Death Process.</span></h1>
 </div>
 
 
@@ -225,23 +231,23 @@ window.Quarto = {
 <li><p>In this dynamic system, each individual has the potential to either give birth to a new individual or undergo a death event.</p></li>
 <li><p>The rates of these birth and death events at any given time depends upon the current number of existing individuals in the system.</p></li>
 </ul>
-<section id="applications-of-birth-death-process" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="applications-of-birth-death-process"><span class="header-section-number">3.1</span> Applications of Birth-Death Process</h2>
+<section id="applications-of-birth-death-process" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="applications-of-birth-death-process"><span class="header-section-number">4.1</span> Applications of Birth-Death Process</h2>
 <ul>
 <li><p>Genetics, epidemiology: Study of infectious diseases, birth-death processes can be employed to model the spread of infections within a population</p></li>
 <li><p>Ecology: model the birth and death rates of different species in a habitat</p></li>
 <li><p>Epidemiology: model number of infected individuals</p></li>
 </ul>
 </section>
-<section id="definition-transition-probability" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="definition-transition-probability"><span class="header-section-number">3.2</span> Definition: Transition Probability</h2>
+<section id="definition-transition-probability" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="definition-transition-probability"><span class="header-section-number">4.2</span> Definition: Transition Probability</h2>
 <!--https://www.sciencedirect.com/science/article/pii/S0895717711005541-->
 <p>Let <span class="math inline">\(N(t)\)</span> be the number of individuals at arbitrary time <span class="math inline">\(t\)</span> for <span class="math inline">\(t \geq 0\)</span> and <span class="math inline">\(\{N(t): t \geq 0\}\)</span> be the sequence of random variables which define a birth-death Markov chain with a birth rate <span class="math inline">\(\lambda_i\)</span> and death rate <span class="math inline">\(\mu_i\)</span> for state <span class="math inline">\(i\)</span>. Assume that an arbitrary community with <span class="math inline">\(r\)</span> individuals, thus <span class="math inline">\(N(0) = r\)</span> for some <span class="math inline">\(r &gt; 0\)</span>.</p>
 <p>The stationary transition probability is defined as follows:</p>
 <p><span class="math display">\[P_{ij}(t) = P\{N(s+t) = j|N(s) = i\} \text{ for all } s \text{and } t&gt;0\]</span></p>
 </section>
-<section id="instantaneous-birth-rate-and-instantaneous-death-rate" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="instantaneous-birth-rate-and-instantaneous-death-rate"><span class="header-section-number">3.3</span> Instantaneous birth rate and instantaneous death rate</h2>
+<section id="instantaneous-birth-rate-and-instantaneous-death-rate" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="instantaneous-birth-rate-and-instantaneous-death-rate"><span class="header-section-number">4.3</span> Instantaneous birth rate and instantaneous death rate</h2>
 <p>Consider a population of <span class="math inline">\(N(t)\)</span> individuals. Suppose in next time interval <span class="math inline">\((t, t+h)\)</span> probability of population increase of 1 (called a birth) is <span class="math inline">\(\lambda_ih + o(h)\)</span> and probability of decrease of 1 (death) is <span class="math inline">\(\mu_ih + o(h)\)</span>. Here <span class="math inline">\(\lambda_i\)</span> is called the instantaneous birth rate and <span class="math inline">\(\mu_i\)</span> is called instantaneous death rate.</p>
 <p>Further, we have</p>
 <p><span class="math display">\[
@@ -253,8 +259,8 @@ window.Quarto = {
 \end{cases}
 \]</span></p>
 </section>
-<section id="postulates" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="postulates"><span class="header-section-number">3.4</span> Postulates</h2>
+<section id="postulates" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="postulates"><span class="header-section-number">4.4</span> Postulates</h2>
 <p>Let <span class="math display">\[P_{ij}(h) = P(N(t+h) = j|N(t) = i)\text{ for all }t \geq 0,\]</span></p>
 <p>Further, <span class="math inline">\(P_{ij}(t)\)</span> satisfy,</p>
 <ol type="1">
@@ -265,12 +271,12 @@ window.Quarto = {
 <li><p><span class="math inline">\(\mu_0 = 0, \lambda_0 &gt; 0, \mu_i, \lambda_i &gt; 0, i=1, 2, 3,,,,\)</span></p></li>
 </ol>
 </section>
-<section id="exercise" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="exercise"><span class="header-section-number">3.5</span> Exercise</h2>
+<section id="exercise" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="exercise"><span class="header-section-number">4.5</span> Exercise</h2>
 <p>Show that the birth process, death process and birth-death process are Markov processes</p>
 </section>
-<section id="special-cases" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="special-cases"><span class="header-section-number">3.6</span> Special cases</h2>
+<section id="special-cases" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="special-cases"><span class="header-section-number">4.6</span> Special cases</h2>
 <ol type="1">
 <li><p>When all <span class="math inline">\(\mu_i = 0\)</span>, called a pure birth process.</p></li>
 <li><p>When all <span class="math inline">\(\lambda_i = 0\)</span> called a pure death process</p></li>
@@ -278,8 +284,8 @@ window.Quarto = {
 <li><p>When <span class="math inline">\(\lambda_n = \lambda\)</span> and <span class="math inline">\(\mu_n = 0\)</span> is called a Poisson process.</p></li>
 </ol>
 </section>
-<section id="exercise-1" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">3.7</span> Exercise</h2>
+<section id="exercise-1" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">4.7</span> Exercise</h2>
 <p>Derive the distribution of length of stay (elapsed time between two consecutive occurrences ) for a birth, death and birth-death process.</p>
 <blockquote class="blockquote">
 <p>Help 1</p>
@@ -296,8 +302,8 @@ window.Quarto = {
 <p>Suppose that a continuous-time time-homogeneous Markov chain <span class="math inline">\(\{N(t): t \geq 0\}\)</span> enters state <span class="math inline">\(i\)</span> at some time, (say at time <span class="math inline">\(s \geq 0\)</span>)) and let <span class="math inline">\(T_i\)</span> denote the amount of time that the process stays in state <span class="math inline">\(i\)</span>. Then, for any <span class="math inline">\(u &gt; 0\)</span></p>
 <p><span class="math display">\[P[T_i \geq u] = P[N(t)=i; s &lt; t &lt; s+u|N(s)=i)]\]</span> for any <span class="math inline">\(s \geq 0\)</span>.</p>
 </section>
-<section id="instanttaneous-probability-transition-probability-probability-mass-function" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="instanttaneous-probability-transition-probability-probability-mass-function"><span class="header-section-number">3.8</span> Instanttaneous Probability, Transition Probability, Probability Mass Function</h2>
+<section id="instanttaneous-probability-transition-probability-probability-mass-function" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="instanttaneous-probability-transition-probability-probability-mass-function"><span class="header-section-number">4.8</span> Instanttaneous Probability, Transition Probability, Probability Mass Function</h2>
 <ul>
 <li>In-class discussion</li>
 </ul>
@@ -388,8 +394,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -500,7 +504,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -728,13 +731,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter2.html" class="pagination-link" aria-label="Discrete Parameter Markov Chains">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Discrete Parameter Markov Chains</span></span>
+      <a href="./practical1.html" class="pagination-link" aria-label="Practical">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Practical</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./chapter6.html" class="pagination-link" aria-label="Applications">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Applications</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Applications</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

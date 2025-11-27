@@ -11,6 +11,7 @@ book:
     - index.qmd
     - intro.qmd
     - chapter2.qmd
+    - practical1.qmd
     - chapter5.qmd
     - chapter6.qmd
     - summary.qmd

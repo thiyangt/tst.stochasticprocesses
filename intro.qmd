@@ -171,17 +171,18 @@ $X_2$ - Cases of dengue during the second week of 2007
 Do you consider @fig-plot1 as a visual representation of the above **Stochastic Process**? 
 
 
-```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
 #| label: fig-plot1
 #| fig-cap: "Weekly dengue cases in Sri Lanka from 2007 to 2023 August"
 library(denguedatahub) # to load data
 library(ggplot2) # for plotting
 data(srilanka_weekly_data)
 srilanka_weekly_data |> 
+  #dplyr::mutate(start.date = as.Date(start.date)) |>
   dplyr::filter(district == "Colombo") |>
 ggplot2::ggplot(aes(x=start.date, y=cases)) + 
   geom_line()  + 
-  scale_x_date(date_breaks = "1 year", date_labels = "%Y") + 
+ # scale_x_date(date_breaks = "1 year", date_labels = "%Y") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + xlab("Time")
 ```
 
