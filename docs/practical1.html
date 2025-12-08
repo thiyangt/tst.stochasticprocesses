@@ -315,17 +315,17 @@ window.Quarto = {
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.3</span>), <span class="at">byrow=</span><span class="cn">TRUE</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">simmarkov</span>(init, mat, <span class="dv">100</span>, <span class="fu">c</span>(<span class="st">"Rainy"</span>, <span class="st">"Sunny"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "Sunny" "Rainy" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Sunny"
- [10] "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Sunny" "Rainy"
- [19] "Sunny" "Sunny" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Rainy" "Sunny"
- [28] "Sunny" "Sunny" "Sunny" "Rainy" "Sunny" "Sunny" "Rainy" "Sunny" "Rainy"
- [37] "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy" "Sunny"
- [46] "Rainy" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy"
- [55] "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy" "Rainy" "Rainy" "Sunny"
- [64] "Sunny" "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Sunny" "Sunny" "Rainy"
- [73] "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Rainy" "Rainy"
- [82] "Sunny" "Rainy" "Sunny" "Rainy" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy"
- [91] "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Rainy" "Rainy"
+<pre><code>  [1] "Sunny" "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Sunny"
+ [10] "Rainy" "Rainy" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy"
+ [19] "Sunny" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Rainy" "Rainy" "Sunny"
+ [28] "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Rainy" "Sunny"
+ [37] "Sunny" "Rainy" "Sunny" "Sunny" "Sunny" "Rainy" "Sunny" "Sunny" "Rainy"
+ [46] "Sunny" "Rainy" "Sunny" "Rainy" "Rainy" "Rainy" "Rainy" "Rainy" "Sunny"
+ [55] "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Sunny"
+ [64] "Rainy" "Rainy" "Rainy" "Rainy" "Sunny" "Rainy" "Rainy" "Rainy" "Rainy"
+ [73] "Rainy" "Rainy" "Rainy" "Rainy" "Rainy" "Rainy" "Sunny" "Sunny" "Sunny"
+ [82] "Rainy" "Rainy" "Sunny" "Sunny" "Rainy" "Rainy" "Sunny" "Rainy" "Sunny"
+ [91] "Rainy" "Sunny" "Sunny" "Rainy" "Sunny" "Rainy" "Sunny" "Rainy" "Rainy"
 [100] "Sunny" "Rainy"</code></pre>
 </div>
 </div>
@@ -380,10 +380,10 @@ Visualise the Markov chain</code></pre>
 </table>
 <p>The following are the rules for shifting between the four levels:</p>
 <ul>
-<li><strong>Level 1:</strong> Move to Level 2 with probability 0.5, stay at Level 1 with probability 0.5.</li>
-<li><strong>Level 2:</strong> Move to Level 1 with probability 0.2, move to Level 3 with probability 0.3, stay at Level 2 with probability 0.5.</li>
-<li><strong>Level 3:</strong> Move to Level 2 with probability 0.3, move to Level 4 with probability 0.4, stay at Level 3 with probability 0.3.</li>
-<li><strong>Level 4:</strong> Move to Level 3 with probability 0.2, stay at Level 4 with probability 0.8.</li>
+<li><p>A policyholder at Level 1 moves to Level 2 with probability 0.5, stays at Level 1 with probability 0.5.</p></li>
+<li><p>A policyholder at Level 2 moves to Level 1 with probability 0.2, moves to Level 3 with probability 0.3, and stays at Level 2 with probability 0.5.</p></li>
+<li><p>A policyholder at Level 3 moves to Level 2 with probability 0.3, moves to Level 4 with probability 0.4, and stays at Level 3 with probability 0.3.</p></li>
+<li><p>A policyholder at Level 4 moves to Level 3 with probability 0.2, and stays at Level 4 with probability 0.8.</p></li>
 </ul>
 <p><strong>Tasks</strong></p>
 <ol type="1">

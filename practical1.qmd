@@ -70,10 +70,13 @@ An insurance company offers four levels of discounts to policyholders based on t
 
 The following are the rules for shifting between the four levels:
 
-- **Level 1:** Move to Level 2 with probability 0.5, stay at Level 1 with probability 0.5.
-- **Level 2:** Move to Level 1 with probability 0.2, move to Level 3 with probability 0.3, stay at Level 2 with probability 0.5.
-- **Level 3:** Move to Level 2 with probability 0.3, move to Level 4 with probability 0.4, stay at Level 3 with probability 0.3.
-- **Level 4:** Move to Level 3 with probability 0.2, stay at Level 4 with probability 0.8.
+- A policyholder at Level 1 moves to Level 2 with probability 0.5, stays at Level 1 with probability 0.5.
+
+- A policyholder at Level 2 moves to Level 1 with probability 0.2, moves to Level 3 with probability 0.3, and stays at Level 2 with probability 0.5.
+
+- A policyholder at Level 3 moves to Level 2 with probability 0.3, moves to Level 4 with probability 0.4, and stays at Level 3 with probability 0.3.
+
+- A policyholder at Level 4 moves to Level 3 with probability 0.2, and stays at Level 4 with probability 0.8.
 
 
 
