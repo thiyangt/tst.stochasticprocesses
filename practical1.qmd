@@ -34,6 +34,28 @@ mat <- matrix(c(0.5, 0.5, 0.7, 0.3), byrow=TRUE, ncol=2)
 simmarkov(init, mat, 100, c("Rainy", "Sunny"))
 ```
 
+## In-class illustration
+
+We are given sequences of emotional states for five individuals (person1–person5). Each sequence represents how a person’s mood changed over time.
+
+```{r}
+person1 <- c("happy", "calm", "neutral", "sad", "angry", "stressed", "happy")
+person2 <- c("happy", "neutral", "calm", "sad", "angry", "happy", "stressed")
+person3 <- c("calm", "happy", "neutral", "sad", "angry", "stressed", "happy")
+person4 <- c("happy", "calm", "sad", "neutral", "angry", "stressed", "happy")
+person5 <- c("happy", "calm", "sad", "angry", "neutral", "happy", "stressed")
+person6 <- c("happy", "calm", "neutral", "sad")
+```
+
+We want to use these sequences to:
+
+    Estimate a transition probability matrix
+
+    Predict the next emotional state for person6
+
+    Visualise the Markov chain
+
+
 ## Question 1
 
 
