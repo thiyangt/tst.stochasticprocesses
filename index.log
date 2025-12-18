@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.27)  27 NOV 2025 21:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.11.27)  19 DEC 2025 04:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,17 +7,17 @@ entering extended mode
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2025/09/09 v3.48 KOMA-Script document class (report)
+Document Class: scrreprt 2025/12/01 v3.49 KOMA-Script document class (report)
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2025/09/09 v3.48 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+Package: scrkbase 2025/12/01 v3.49 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2025/09/09 v3.48 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+Package: scrbase 2025/12/01 v3.49 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2025/09/09 v3.48 KOMA-Script package (file load hooks)
+Package: scrlfile 2025/12/01 v3.49 KOMA-Script package (file load hooks)
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2025/09/09 v3.48 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2025/12/01 v3.49 KOMA-Script package (using LaTeX hooks)
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2025/09/09 v3.48 KOMA-Script package (logo)
+Package: scrlogo 2025/12/01 v3.49 KOMA-Script package (logo)
 ))) (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
@@ -25,7 +25,7 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
 )) (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2025/09/09 v3.48 KOMA-Script package (handling toc-files)
+Package: tocbasic 2025/12/01 v3.49 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip49
 \scr@dte@tocline@numbox=\box53
 )
@@ -33,11 +33,11 @@ Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 143.
 Class scrreprt Info: File `scrsize11pt.clo' used instead of
-(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 2707.
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 2708.
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2025/09/09 v3.48 KOMA-Script font size class option (11pt)
+File: scrsize11pt.clo 2025/12/01 v3.49 KOMA-Script font size class option (11pt)
 ) (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2025/09/09 v3.48 KOMA-Script package (type area)
+Package: typearea 2025/12/01 v3.49 KOMA-Script package (type area)
 \ta@bcor=\skip50
 \ta@div=\count271
 Package typearea Info: You've used standard option `letterpaper'.
@@ -66,7 +66,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1807.
+(typearea)              on input line 1808.
 )
 \c@part=\count272
 \c@chapter=\count273
@@ -77,49 +77,49 @@ Package typearea Info: These are the values describing the layout:
 \c@subparagraph=\count278
 \scr@dte@chapter@maxnumwidth=\skip55
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\chapter on input line 6080.
+(scrreprt)           for `\chapter on input line 5926.
 \scr@dte@section@maxnumwidth=\skip56
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\section on input line 6091.
+(scrreprt)           for `\section on input line 5937.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\section on input line 6091.
+(scrreprt)           for `\section on input line 5937.
 \scr@dte@part@maxnumwidth=\skip57
 Class scrreprt Info: using compatibility default `afterindent=true'
-(scrreprt)           for `\part on input line 6100.
+(scrreprt)           for `\part on input line 5946.
 \scr@dte@subsection@maxnumwidth=\skip58
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsection on input line 6110.
+(scrreprt)           for `\subsection on input line 5956.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsection on input line 6110.
+(scrreprt)           for `\subsection on input line 5956.
 \scr@dte@subsubsection@maxnumwidth=\skip59
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsubsection on input line 6120.
+(scrreprt)           for `\subsubsection on input line 5966.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsubsection on input line 6120.
+(scrreprt)           for `\subsubsection on input line 5966.
 \scr@dte@paragraph@maxnumwidth=\skip60
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\paragraph on input line 6131.
+(scrreprt)           for `\paragraph on input line 5977.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\paragraph on input line 6131.
+(scrreprt)           for `\paragraph on input line 5977.
 \scr@dte@subparagraph@maxnumwidth=\skip61
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subparagraph on input line 6141.
+(scrreprt)           for `\subparagraph on input line 5987.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subparagraph on input line 6141.
+(scrreprt)           for `\subparagraph on input line 5987.
 \abovecaptionskip=\skip62
 \belowcaptionskip=\skip63
 \c@pti@nb@sid@b@x=\box54
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 7348.
+(tocbasic)             for `lof' on input line 7217.
 \scr@dte@figure@maxnumwidth=\skip64
 \c@figure=\count279
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 7361.
+(tocbasic)             for `lot' on input line 7230.
 \scr@dte@table@maxnumwidth=\skip65
 \c@table=\count280
-Class scrreprt Info: Redefining `\numberline' on input line 7532.
+Class scrreprt Info: Redefining `\numberline' on input line 7401.
 \bibindent=\dimen148
 ) (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -651,6 +651,10 @@ File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count341
 )) (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+Package tocbasic Info: Loading of class-dependent code for package caption3
+(tocbasic)             prevented on line 50.
+
 (c:/Users/DELL/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen191
@@ -661,15 +665,7 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@indent=\dimen196
 \caption@parindent=\dimen197
 \caption@hangindent=\dimen198
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\@abovecaptionbreak \vskip \abovecaptionskip \@abovecaptionbreak \@@makecaption \@firstofone {#1}{#2}\@belowcaptionbreak \vskip \belowcaptionskip \@belowcaptionbreak  on input line 1175.
 )
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
 \c@caption@flags=\count342
 \c@continuedfloat=\count343
 Package caption Info: hyperref package is loaded.
@@ -1098,25 +1094,25 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 chapter 3.
 [23
 
-] [24] [25]
+] [24] [25] [26]
 chapter 4.
-[26
+[27
 
-] [27] [28]
+] [28] [29]
 chapter 5.
-[29
+[30
 
-] [30] [31]
+] [31] [32]
 File: ch6.1.png Graphic file (type bmp)
 <ch6.1.png>
 
-Overfull \hbox (10.94946pt too wide) in paragraph at lines 1662--1663
+Overfull \hbox (10.94946pt too wide) in paragraph at lines 1692--1693
 [][] 
  []
 
-[32] [33]
+[33] [34]
 chapter 6.
-[34
+[35
 
 ]
 
@@ -1126,18 +1122,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1720 \end{CSLReferences}
+l.1750 \end{CSLReferences}
                           
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
  
 Here is how much of TeX's memory you used:
- 24396 strings out of 470195
- 475181 string characters out of 5477276
- 1187461 words of memory out of 5000000
- 52663 multiletter control sequences out of 15000+600000
+ 24412 strings out of 470195
+ 475684 string characters out of 5477276
+ 1189157 words of memory out of 5000000
+ 52679 multiletter control sequences out of 15000+600000
  637177 words of font info for 124 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,9n,114p,11208b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on index.pdf (34 pages).
+ 108i,9n,114p,11208b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on index.pdf (35 pages).
